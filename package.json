@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /natours-project/",
+    "build": "ng build --base-href /natours-project/ --deploy-url /natours-project/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
