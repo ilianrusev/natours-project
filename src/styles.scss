@@ -1,30 +1,10 @@
-@import "sass/variables";
+@import "sass/abstracts/variables";
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/functions";
 
-/*
-COLORS:
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-*/
+@import "sass/base/base";
+@import "sass/base/animations";
+@import "sass/base/typography";
+@import "sass/base/utilities";
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%; //this translates to 10px
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  // font-size: 16px;
-  line-height: 1.7;
-  color: $color-grey-dark;
-  padding: 3rem;
-  box-sizing: border-box;
-}
+@import "sass/components/button";
