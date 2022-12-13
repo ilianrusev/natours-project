@@ -1,3 +1,5 @@
+@import "sass/variables";
+
 /*
 COLORS:
 Light green: #7ed56f
@@ -22,7 +24,7 @@ body {
   font-weight: 400;
   // font-size: 16px;
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
   box-sizing: border-box;
 }
