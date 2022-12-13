@@ -7,9 +7,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MainComponent } from './main/main.component';
 import { AboutSectionComponent } from './main/components/about-section/about-section.component';
+import { FeaturesSectionComponent } from './main/components/features-section/features-section.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, MainComponent, AboutSectionComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, MainComponent, AboutSectionComponent, FeaturesSectionComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
