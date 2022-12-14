@@ -4,10 +4,31 @@
   </div>
 
   <div class="row">
-    <div *ngFor="let tour of tours" class="col-1-of-3">
+    <div *ngFor="let tour of tours; let i = index" class="col-1-of-3">
       <div class="card">
-        <div class="card__side card__side--front">front</div>
-        <div class="card__side card__side--back">back</div>
+        <div class="card__side card__side--front">
+          <div class="card__picture" [ngClass]="'card__picture--' + i">
+            &nbsp;
+          </div>
+          <h4 class="card__heading">
+            <span
+              class="card__heading-span"
+              [ngClass]="'card__heading-span--' + i"
+              >{{ tour.heading }}</span
+            >
+          </h4>
+          <div class="card__details">
+            <ul>
+              <li *ngFor="let word of tour.description">{{ word }}</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card__side card__side--back"
+          [ngClass]="'card__side--back-' + i"
+        >
+          back
+        </div>
       </div>
     </div>
   </div>
