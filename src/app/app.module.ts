@@ -12,6 +12,7 @@ import { ToursSectionComponent } from './components/main/components/tours-sectio
 import { StoriesSectionComponent } from './components/main/components/stories-section/stories-section.component';
 import { FormComponent } from './components/form/form.component';
 import { BookingSectionComponent } from './components/main/components/booking-section/booking-section.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BookingSectionComponent } from './components/main/components/booking-se
     StoriesSectionComponent,
     FormComponent,
     BookingSectionComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
