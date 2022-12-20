@@ -29,9 +29,9 @@ export class StoriesSectionComponent implements OnInit {
     },
   ];
 
-  backgroundVideoSources: string[] = [
-    'assets/img/video.mp4',
-    'assets/img/video.webm',
+  backgroundVideoSources = [
+    { src: 'assets/img/video.mp4', type: 'videp/mp4' },
+    { src: 'assets/img/video.webm', type: 'video/webm' },
   ];
 
   constructor() {}
