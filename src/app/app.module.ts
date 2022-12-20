@@ -15,6 +15,7 @@ import { BookingSectionComponent } from './components/main/components/booking-se
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { PopupComponent } from './components/popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     BookingSectionComponent,
     FooterComponent,
     NavbarComponent,
+    PopupComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

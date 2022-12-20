@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tours-section.component.scss'],
 })
 export class ToursSectionComponent implements OnInit {
+  showPopup: boolean = false;
+
   tours: any[] = [
     {
       heading: 'The Sea Explorer',
@@ -45,4 +47,8 @@ export class ToursSectionComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  onClosePopup(close: boolean) {
+    this.showPopup = !close;
+  }
 }

@@ -1,0 +1,33 @@
+<div class="popup" [ngClass]="{ popup__hide: hidePopup }">
+  <div class="popup__left">
+    <img src="assets/img/nat-8.jpg" class="popup__img" alt="tour image" />
+    <img src="assets/img/nat-9.jpg" class="popup__img" alt="tour image" />
+  </div>
+  <div class="popup__right">
+    <div class="popup__close" (click)="onClose()">&times;</div>
+    <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+    <h3 class="heading-tertiary u-margin-bottom-small">
+      Important &ndash; Please read these terms before booking
+    </h3>
+    <p class="popup__text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat libero in
+      facilis fuga ea distinctio voluptas odio, quam minima maxime est debitis
+      ipsam labore nihil, consequatur possimus quos eius assumenda. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Ad, velit voluptatem, ea
+      dignissimos eius consequuntur reprehenderit ducimus quas nihil deserunt
+      cupiditate architecto fugiat assumenda quasi culpa fugit natus! Quas, sit!
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi esse
+      reprehenderit itaque illum eius error modi enim velit, consequuntur ut
+      fugit perspiciatis adipisci alias sequi, hic dolorum veritatis ipsum
+      dicta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+      quaerat facilis tenetur, unde voluptate minima accusantium deleniti beatae
+      incidunt accusamus aut nemo, iure eveniet ut veniam ipsam impedit officiis
+      dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde cum
+      quos nam sunt voluptatem numquam vitae iure, amet ad natus vero
+      repudiandae nesciunt porro odio deleniti et aut impedit esse!
+    </p>
+    <a (click)="onClose()" class="btn btn--colored">Book now</a>
+  </div>
+</div>
+
+<div (click)="onClose()" class="popup-overlay"></div>

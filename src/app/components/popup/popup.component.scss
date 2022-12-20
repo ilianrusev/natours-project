@@ -1,0 +1,98 @@
+@import "../../../sass/abstracts/variables";
+
+.popup {
+  display: table;
+  background-color: $color-white;
+  width: 75%;
+  box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  overflow: hidden;
+  z-index: 3000;
+  border-radius: 0.5rem;
+  visibility: hidden;
+  opacity: 0;
+  animation: popup-show 0.4s ease-in-out forwards;
+
+  &__hide {
+    animation: popup-hide 0.4s ease-in-out forwards;
+  }
+
+  &__left {
+    width: 33.33333%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__right {
+    width: 66.66666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light-2;
+    hyphens: auto;
+  }
+
+  &__close {
+    cursor: pointer;
+    color: $color-grey-dark;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    font-size: 4rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-grey-dark-2;
+    }
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color-black, 0.8);
+  z-index: 2500;
+  animation: popup-show 0.4s ease-in-out forwards;
+}
+
+@keyframes popup-show {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes popup-hide {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
