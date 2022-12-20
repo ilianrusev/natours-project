@@ -14,6 +14,7 @@ import { FormComponent } from './components/form/form.component';
 import { BookingSectionComponent } from './components/main/components/booking-section/booking-section.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FooterComponent,
     NavbarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
