@@ -1,8 +1,6 @@
 # NatoursProject
 
-<h1>This is Work In Progress</h1>
-
-<h4>You can chek ou the website here <a href="https://ilianrusev.github.io/natours-project/">HERE</a></h4>
+<h4>You can check out the website <a href="https://ilianrusev.github.io/natours-project/">HERE</a></h4>
 
 This project is for learning purposes.
 
