@@ -3,24 +3,18 @@
     <h2 class="heading-secondary">We make people genuinely happy</h2>
   </div>
 
-  <div class="row">
+  <div *ngFor="let story of stories; let i = index" class="row">
     <div class="story">
       <figure class="story__shape">
-        <img
-          src="assets/img/nat-8.jpg"
-          alt="person on a tour"
-          class="story__img"
-        />
+        <img [src]="story.imageUrl" alt="person on a tour" class="story__img" />
+        <figcaption class="story__caption">{{ story.fullName }}</figcaption>
       </figure>
       <div class="story__text">
         <h3 class="heading-tertiary u-margin-bottom-small">
-          I had the best week with my family
+          {{ story.title }}
         </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero delectus
-          reprehenderit, Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Vero delectus reprehenderit, Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Vero delectus reprehenderit
+          {{ story.description }}
         </p>
       </div>
     </div>
