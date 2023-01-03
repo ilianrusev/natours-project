@@ -1,9 +1,14 @@
 @import "../../../../../sass/abstracts/variables";
+@import "../../../../../sass/abstracts/mixins";
 
 .section-tours {
   background-color: $color-grey-light-1;
   padding: 15rem 0;
   transform: skewY(-7deg);
+
+  @include respond(phone, tab-land, tab-port) {
+    padding: 10rem 0;
+  }
 
   & > * {
     transform: skewY(7deg);

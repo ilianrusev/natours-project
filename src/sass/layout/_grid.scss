@@ -4,15 +4,33 @@
   max-width: $grid-width;
   margin: 0 auto;
 
+  @include respond(phone, tab-land, tab-port) {
+    max-width: $grid-width-small;
+    padding: 0 3rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(phone, tab-land, tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   [class^="col-"] {
     float: left;
 
+    @include respond(phone, tab-land, tab-port) {
+      width: 100% !important;
+    }
+
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(phone, tab-land, tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
     }
   }
 
